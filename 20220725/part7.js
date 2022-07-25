@@ -125,8 +125,47 @@ console.log(random);
 
 
 console.log(new Date("2020/07/24").getFullYear());
-*/
+
 
 const str = "Hello world";
 
 str.substring(1,4);
+
+
+const arr = ["apple", "banan", "orange"];
+console.log(arr.length); //3
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]); // "apple", "banan", "orange"
+
+
+const arr = [1, 2, 3]
+console.log(arr.length);
+
+
+const arr = new Array(10);
+
+console.log(arr); //[empty × 10]
+console.log(arr.length); //10
+
+console.log(new Array()); //[]
+
+console.log(new Array(1,2,3)); //[1,2,3]
+*/
+
+
+
+const arr = [0];
+// 배열 요소의 추가
+arr[1] = 3;
+
+console.log(arr); // [0,3]
+console.log(arr.length); //2
+
+// 배열 요소의 갱신
+arr[1] = 33;
+console.log(arr); //[0,33]
+
+// 배열 요소의 삭제
+delete arr[1];
+console.log(arr); //[0, empty]
